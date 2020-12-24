@@ -6,7 +6,7 @@ API for [ARTravel](https://github.com/juansjimenez/ARTravel) app (can be found i
 
 ## Getting Started
 
-No prerequisites are needed, you can check out the app demo [here](https://artravel-api.herokuapp.com/)!
+No prerequisites are needed, you can check out the API [here](https://artravel-api.herokuapp.com/)!
 
 ## Built With
 
