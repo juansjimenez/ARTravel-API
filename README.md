@@ -2,7 +2,7 @@
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://mit-license.org/)
 
-API for [ARTravel](https://github.com/juansjimenez/ARTravel) app (can be found in this profile) made with Flask and MongoDB, hosted on Heroku. The database is hosted on a MongoDB Atlas Cluster.
+API for [ARTravel](https://github.com/juansjimenez/ARTravel) app. Made with Flask and MongoDB, hosted on Heroku. The database is hosted on a MongoDB Atlas Cluster.
 
 ## Getting Started
 
