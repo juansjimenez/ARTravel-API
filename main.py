@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, request, abort, json
 from pymongo import MongoClient
 from werkzeug.exceptions import BadRequest
@@ -13,17 +14,14 @@ USER = "grupo90"
 PASS = "grupo90"
 DATABASE = "grupo90"
 
-# MONGO_URL = os.environ.get('MONGO_URL')
-# if not MONGO_URL:
-#     MONGO_URL = 'localhost'
-
-MONGO_URL = 'mongodb+srv://admin:rasputin00@appscluster.bvybr.mongodb.net/ARTravel?retryWrites=true&w=majority'
+MONGO_URL = os.environ.get('MONGO_URL')
+if not MONGO_URL:
+    MONGO_URL = 'localhost'
 
 client = MongoClient(MONGO_URL)
-
-
-usuarios = db.users
-mensajes = db.messages
+db = pymongo.database.Database(client, 'ARTravel')
+usuarios = pymongo.collection.Collection(db, 'users')
+mensajes = pymongo.collection.Collection(db, 'messages')
 
 '''
 Usuarios:
