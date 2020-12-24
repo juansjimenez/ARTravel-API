@@ -10,7 +10,6 @@ USER_KEYS = ['name', 'age', 'description']
 MESSAGE_KEYS = ['message', 'sender', 'receptant', 'lat', 'long', 'date']
 SEARCH_KEYS = ["desired", "required", "forbidden", "userId"]
 
-
 MONGO_URL = os.environ.get('MONGO_URL')
 DATABASE = 'ARTravel'
 if not MONGO_URL:
