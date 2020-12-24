@@ -45,7 +45,7 @@ def home():
     '''
     Página de inicio
     '''
-    return "<h1>¡Hola, esta es la API donde se guarda la información de Users y Messages de la aplicación web Art & Travel</h1>"
+    return "<h1>ARTravel Users and Messages API</h1>"
 
 @app.route("/users")
 def get_users():
