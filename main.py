@@ -13,9 +13,12 @@ USER = "grupo90"
 PASS = "grupo90"
 DATABASE = "grupo90"
 
-URL = 'localhost'
-client = MongoClient(URL)
-db = client["grupo90"]
+MONGO_URL = os.environ.get('MONGO_URL')
+if not MONGO_URL:
+    MONGO_URL = 'localhost'
+
+client = MongoClient(MONGO_URL)
+db = client["ARTravel"]
 
 usuarios = db.users
 mensajes = db.messages
@@ -39,6 +42,8 @@ Mensajes:
 '''
 
 app = Flask(__name__)
+
+app.config['MONGO_URI'] = MONGO_URL
 
 @app.route("/")
 def home():
