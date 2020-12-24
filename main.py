@@ -13,12 +13,14 @@ USER = "grupo90"
 PASS = "grupo90"
 DATABASE = "grupo90"
 
-MONGO_URL = os.environ.get('MONGO_URL')
-if not MONGO_URL:
-    MONGO_URL = 'localhost'
+# MONGO_URL = os.environ.get('MONGO_URL')
+# if not MONGO_URL:
+#     MONGO_URL = 'localhost'
+
+MONGO_URL = 'mongodb+srv://admin:rasputin00@appscluster.bvybr.mongodb.net/ARTravel?retryWrites=true&w=majority'
 
 client = MongoClient(MONGO_URL)
-db = client["ARTravel"]
+
 
 usuarios = db.users
 mensajes = db.messages
