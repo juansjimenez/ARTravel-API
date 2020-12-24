@@ -10,16 +10,15 @@ USER_KEYS = ['name', 'age', 'description']
 MESSAGE_KEYS = ['message', 'sender', 'receptant', 'lat', 'long', 'date']
 SEARCH_KEYS = ["desired", "required", "forbidden", "userId"]
 
-USER = "grupo90"
-PASS = "grupo90"
-DATABASE = "grupo90"
 
 MONGO_URL = os.environ.get('MONGO_URL')
+DATABASE = 'ARTravel'
 if not MONGO_URL:
     MONGO_URL = 'localhost'
+    DATABASE = 'grupo90'
 
 client = MongoClient(MONGO_URL)
-db = pymongo.database.Database(client, 'ARTravel')
+db = pymongo.database.Database(client, DATABASE)
 usuarios = pymongo.collection.Collection(db, 'users')
 mensajes = pymongo.collection.Collection(db, 'messages')
 
