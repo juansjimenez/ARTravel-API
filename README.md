@@ -12,7 +12,7 @@ No prerequisites are needed, you can check out the API [here](https://artravel-a
 
 * [Python](https://www.python.org/) - Programming language
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Python Framework
-* [MongoDB](https://www.mongodb.com/) - NoSQL database engine
+* [MongoDB](https://www.mongodb.com/) - NoSQL Database Engine
 
 ## Authors
 
