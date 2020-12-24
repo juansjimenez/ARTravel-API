@@ -16,7 +16,7 @@ No prerequisites are needed, you can check out the API [here](https://artravel-a
 
 ## Authors
 
-* **@Juan379** 
+* **juansjimenez** 
 * **@danustilovsky**
 
 ## License
